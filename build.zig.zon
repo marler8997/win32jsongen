@@ -1,0 +1,26 @@
+.{
+    .name = "win32jsongen",
+    .version = "0.0.0",
+    .dependencies = .{
+        //.metadata = .{
+        //.hash = "1220c78f77b88a2a5334e587f3052d7e1d77dfc2884fce9aed39f7f6423e989ea08b",
+        //.url = "https://www.nuget.org/api/v2/package/Microsoft.Windows.SDK.Win32Metadata/25.0.28-preview",
+        //.unpack = false,
+        // for now just download the nupkg file to this subdirectory
+        //    .path = "win32metadata",
+        //},
+        .zipcmdline = .{
+            .url = "git+https://github.com/marler8997/zipcmdline#436c68f8993a355f6ef0c65b43fd7d56d06bcedc",
+            .hash = "12203409341d97b9ed71926213814b88c3d3181ea944192278fc73357a2de6ca22dc",
+        },
+        .winmd = .{
+            //.url =
+            .path = "winmd-zig",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
